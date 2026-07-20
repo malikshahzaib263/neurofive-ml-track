@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-This repository contains my completed Week 1 and week 2 tasks for the Neurofive Machine Learning Track. The projects cover the complete beginner machine learning workflow, including Exploratory Data Analysis (EDA), data cleaning, data visualization, binary classification, and regression using Python and scikit-learn.
+This repository contains my completed Week 1 and Week 2 tasks for the Neurofive Machine Learning Track. The projects cover the complete beginner machine learning workflow, including Exploratory Data Analysis (EDA), data cleaning, data visualization, binary classification, and regression using Python and scikit-learn.
 
 The objective of these tasks was to understand how data is explored, prepared, visualized, and used to build machine learning models for both classification and regression problems.
 
