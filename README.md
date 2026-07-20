@@ -1,40 +1,146 @@
-# Neurofive ML Track
+# Neurofive ML Track – Week 2
 
-This repository contains my Machine Learning assignments, notebooks, and practical projects completed as part of the Neurofive ML Track.
+## Machine Learning Fundamentals
 
-## Task 1: Titanic Exploratory Data Analysis
+**Author:** Shahzaib Arshad
 
-In Task 1, I performed initial Exploratory Data Analysis on the Titanic dataset using Python, Pandas, and NumPy.
+---
 
-### Work completed
-- Loaded the Titanic dataset using `pandas.read_csv()`
-- Inspected the first rows using `head()`
-- Reviewed dataset structure using `info()`
-- Generated numerical statistics using `describe()`
-- Identified total rows and columns
-- Checked missing values
-- Identified numerical and categorical features
-- Wrote a short data story based on the findings
+## Project Overview
 
-## Task 2: Data Cleaning and Visualization
+This repository contains my completed Week 2 tasks for the Neurofive Machine Learning Track. The projects cover the complete beginner machine learning workflow, including Exploratory Data Analysis (EDA), data cleaning, data visualization, binary classification, and regression using Python and scikit-learn.
 
-In Task 2, I cleaned the Titanic dataset and created visualizations to better understand patterns, outliers, and relationships between features.
+The objective of these tasks was to understand how data is explored, prepared, visualized, and used to build machine learning models for both classification and regression problems.
 
-### Work completed
-- Filled missing `Age` values using the median
-- Filled missing `Embarked` values using the mode
-- Removed the `Cabin` column because it contained too many missing values
-- Created an age-distribution histogram
-- Detected fare outliers using a boxplot
-- Created a passenger survival bar chart
-- Created a correlation heatmap
-- Analyzed which feature appears to affect survival the most
+---
 
-## Key Finding
+# Task 1 – Explore the Titanic Dataset
 
-Passenger sex appears to have the strongest effect on survival. Female passengers had a much higher survival rate than male passengers. Passenger class also influenced survival, as first-class passengers generally had better survival chances.
+## Objective
 
-## Tools and Libraries
+Perform Exploratory Data Analysis (EDA) on the Titanic dataset to understand its structure, data quality, and important characteristics before applying machine learning.
+
+### Activities Performed
+
+- Loaded the Titanic dataset using Pandas.
+- Explored the dataset using:
+  - `head()`
+  - `info()`
+  - `describe()`
+- Identified:
+  - Number of rows and columns
+  - Missing values
+  - Numerical features
+  - Categorical features
+- Created an initial data summary.
+
+### Technologies Used
+
+- Python
+- Google Colab
+- Pandas
+- NumPy
+
+---
+
+# Task 2 – Data Cleaning and Visualization
+
+## Objective
+
+Prepare the Titanic dataset for machine learning by cleaning missing values and visualizing important data patterns.
+
+### Activities Performed
+
+- Filled missing values using:
+  - Median
+  - Mode
+- Removed the Cabin column due to excessive missing values.
+- Detected outliers using a boxplot.
+- Created visualizations:
+  - Histogram
+  - Boxplot
+  - Bar Chart
+  - Correlation Heatmap
+- Identified the features that most influence passenger survival.
+
+### Libraries Used
+
+- Matplotlib
+- Seaborn
+
+---
+
+# Task 3 – Titanic Survival Prediction
+
+## Objective
+
+Develop a binary classification model to predict whether a passenger survived the Titanic disaster.
+
+### Machine Learning Workflow
+
+- Selected relevant features
+- Encoded categorical variables using OneHotEncoder
+- Split the dataset using `train_test_split`
+- Trained a Logistic Regression model
+- Generated predictions
+- Evaluated performance using:
+  - Accuracy Score
+  - Confusion Matrix
+  - Classification Report
+
+### Model
+
+- Logistic Regression
+
+### Evaluation Metrics
+
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
+
+---
+
+# Task 4 – House Price Prediction
+
+## Objective
+
+Build a Linear Regression model to predict house prices using selected numerical features.
+
+### Dataset
+
+House Prices – Advanced Regression Techniques (Kaggle)
+
+### Selected Features
+
+- OverallQual
+- GrLivArea
+- GarageCars
+- TotalBsmtSF
+- YearBuilt
+
+### Machine Learning Workflow
+
+- Selected important features
+- Split the dataset into training and testing sets
+- Trained a Linear Regression model
+- Predicted house prices
+- Evaluated the model using:
+  - RMSE (Root Mean Squared Error)
+  - R² Score
+- Compared Actual vs Predicted prices using a scatter plot
+
+### Model
+
+- Linear Regression
+
+### Evaluation Metrics
+
+- RMSE
+- R² Score
+
+---
+
+# Technologies Used
 
 - Python
 - Google Colab
@@ -42,15 +148,68 @@ Passenger sex appears to have the strongest effect on survival. Female passenger
 - NumPy
 - Matplotlib
 - Seaborn
+- Scikit-learn
 
-## Dataset
+---
 
-Titanic - Machine Learning from Disaster
+# Skills Learned
 
-## Notebook
+During these tasks, I learned how to:
 
-- `Titanic_EDA.ipynb`
+- Perform Exploratory Data Analysis (EDA)
+- Clean and preprocess datasets
+- Handle missing values
+- Visualize data effectively
+- Detect outliers
+- Build classification models
+- Build regression models
+- Evaluate machine learning models
+- Interpret confusion matrices
+- Understand RMSE and R² score
+- Use Google Colab for machine learning projects
+
+---
+
+# Repository Structure
+
+```text
+Week_2_Task_1_EDA.ipynb
+Week_2_Task_2_Data_Cleaning_and_Visualization.ipynb
+Week_2_Task_3_Titanic_Classification.ipynb
+Week_2_Task_4_House_Price_Regression.ipynb
+README.md
+```
+
+---
+
+# Results
+
+## Titanic Classification
+
+- Algorithm: Logistic Regression
+- Evaluation:
+  - Accuracy Score
+  - Confusion Matrix
+  - Classification Report
+
+## House Price Prediction
+
+- Algorithm: Linear Regression
+- Evaluation:
+  - RMSE
+  - R² Score
+  - Actual vs Predicted Scatter Plot
+
+---
+
+# Conclusion
+
+These projects provided practical experience with the complete machine learning workflow, from understanding and preparing data to building predictive models and evaluating their performance. They strengthened my understanding of both classification and regression techniques using real-world datasets and Python's machine learning ecosystem.
+
+---
 
 ## Author
 
 **Shahzaib Arshad**
+
+Neurofive Machine Learning Track – Week 2
