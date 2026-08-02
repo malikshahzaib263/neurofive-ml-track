@@ -1,215 +1,154 @@
-# Neurofive ML Track – Week 2
-
-## Machine Learning Fundamentals
-
-**Author:** Shahzaib Arshad
-
 ---
 
-## Project Overview
+# Week 3 – Machine Learning Fundamentals
 
-This repository contains my completed Week 1 and Week 2 tasks for the Neurofive Machine Learning Track. The projects cover the complete beginner machine learning workflow, including Exploratory Data Analysis (EDA), data cleaning, data visualization, binary classification, and regression using Python and scikit-learn.
-
-The objective of these tasks was to understand how data is explored, prepared, visualized, and used to build machine learning models for both classification and regression problems.
-
----
-
-# Task 1 – Explore the Titanic Dataset
+# Task 1 – Model Evaluation & Hyperparameter Tuning
 
 ## Objective
 
-Perform Exploratory Data Analysis (EDA) on the Titanic dataset to understand its structure, data quality, and important characteristics before applying machine learning.
+Evaluate and improve the Titanic Survival Prediction model by using advanced evaluation metrics and hyperparameter tuning.
 
 ### Activities Performed
 
-- Loaded the Titanic dataset using Pandas.
-- Explored the dataset using:
-  - `head()`
-  - `info()`
-  - `describe()`
-- Identified:
-  - Number of rows and columns
-  - Missing values
-  - Numerical features
-  - Categorical features
-- Created an initial data summary.
-
-### Technologies Used
-
-- Python
-- Google Colab
-- Pandas
-- NumPy
-
----
-
-# Task 2 – Data Cleaning and Visualization
-
-## Objective
-
-Prepare the Titanic dataset for machine learning by cleaning missing values and visualizing important data patterns.
-
-### Activities Performed
-
-- Filled missing values using:
-  - Median
-  - Mode
-- Removed the Cabin column due to excessive missing values.
-- Detected outliers using a boxplot.
-- Created visualizations:
-  - Histogram
-  - Boxplot
-  - Bar Chart
-  - Correlation Heatmap
-- Identified the features that most influence passenger survival.
-
-### Libraries Used
-
-- Matplotlib
-- Seaborn
-
----
-
-# Task 3 – Titanic Survival Prediction
-
-## Objective
-
-Develop a binary classification model to predict whether a passenger survived the Titanic disaster.
-
-### Machine Learning Workflow
-
-- Selected relevant features
-- Encoded categorical variables using OneHotEncoder
-- Split the dataset using `train_test_split`
-- Trained a Logistic Regression model
-- Generated predictions
-- Evaluated performance using:
-  - Accuracy Score
-  - Confusion Matrix
+- Revisited the Logistic Regression model developed in Week 2.
+- Evaluated the model using:
+  - Precision
+  - Recall
+  - F1-score
   - Classification Report
+- Explained why accuracy alone can be misleading for imbalanced datasets.
+- Performed hyperparameter tuning using **GridSearchCV**.
+- Tuned the following hyperparameters:
+  - C
+  - Solver
+- Compared the original model with the tuned model using a performance comparison table.
+- Improved model performance through parameter optimization.
 
 ### Model
 
-- Logistic Regression
+- Logistic Regression (Original)
+- Logistic Regression (Tuned using GridSearchCV)
 
 ### Evaluation Metrics
 
-- Accuracy Score
-- Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1-score
 - Classification Report
 
 ---
 
-# Task 4 – House Price Prediction
+# Task 2 – Customer Churn Prediction
 
 ## Objective
 
-Build a Linear Regression model to predict house prices using selected numerical features.
+Develop machine learning models to predict customer churn and identify the most important business factors influencing customer retention.
 
 ### Dataset
 
-House Prices – Advanced Regression Techniques (Kaggle)
+Telco Customer Churn Dataset (Kaggle)
 
-### Selected Features
+### Activities Performed
 
-- OverallQual
-- GrLivArea
-- GarageCars
-- TotalBsmtSF
-- YearBuilt
+- Performed quick Exploratory Data Analysis (EDA).
+- Analyzed:
+  - Contract Type
+  - Customer Tenure
+  - Monthly Charges
+  - Internet Service
+  - Payment Method
+- Cleaned and prepared the dataset.
+- Converted categorical variables using One-Hot Encoding.
+- Checked and handled class imbalance using balanced class weights.
+- Trained two machine learning models:
+  - Logistic Regression
+  - Decision Tree Classifier
+- Compared model performance using:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+- Identified the top three customer churn factors using Decision Tree Feature Importance.
+- Prepared a business-oriented summary based on the findings.
 
-### Machine Learning Workflow
+### Models
 
-- Selected important features
-- Split the dataset into training and testing sets
-- Trained a Linear Regression model
-- Predicted house prices
-- Evaluated the model using:
-  - RMSE (Root Mean Squared Error)
-  - R² Score
-- Compared Actual vs Predicted prices using a scatter plot
-
-### Model
-
-- Linear Regression
+- Logistic Regression
+- Decision Tree Classifier
 
 ### Evaluation Metrics
 
-- RMSE
-- R² Score
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- Classification Report
+- Feature Importance
 
 ---
 
-# Technologies Used
-
-- Python
-- Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-
----
-
-# Skills Learned
-
-During these tasks, I learned how to:
-
-- Perform Exploratory Data Analysis (EDA)
-- Clean and preprocess datasets
-- Handle missing values
-- Visualize data effectively
-- Detect outliers
-- Build classification models
-- Build regression models
-- Evaluate machine learning models
-- Interpret confusion matrices
-- Understand RMSE and R² score
-- Use Google Colab for machine learning projects
-
----
-
-# Repository Structure
+# Updated Repository Structure
 
 ```text
 Week_1_Task_1_Titanic_EDA.ipynb
-Week_1_Task_2_Titanic_EDA.ipynb
+Week_1_Task_2_Data_Cleaning_and_Visualization.ipynb
 Week_2_Task_3_Titanic_Classification.ipynb
 Week_2_Task_4_House_Price_Regression.ipynb
+Week_3_Task_1_Model_Evaluation_and_Tuning.ipynb
+Week_3_Task_2_Customer_Churn_Prediction.ipynb
 README.md
 ```
 
 ---
 
-# Results
+# Additional Skills Learned
 
-## Titanic Classification
+During Week 3, I also learned how to:
 
-- Algorithm: Logistic Regression
-- Evaluation:
-  - Accuracy Score
-  - Confusion Matrix
-  - Classification Report
-
-## House Price Prediction
-
-- Algorithm: Linear Regression
-- Evaluation:
-  - RMSE
-  - R² Score
-  - Actual vs Predicted Scatter Plot
+- Evaluate classification models using multiple metrics.
+- Interpret Precision, Recall, and F1-score.
+- Understand why accuracy alone may be misleading.
+- Perform Hyperparameter Tuning using GridSearchCV.
+- Compare machine learning models effectively.
+- Build Decision Tree classification models.
+- Analyze Feature Importance.
+- Detect and handle class imbalance.
+- Translate machine learning results into business insights.
+- Present machine learning findings to non-technical stakeholders.
 
 ---
 
-# Conclusion
+# Overall Learning Outcomes
 
-These projects provided practical experience with the complete machine learning workflow, from understanding and preparing data to building predictive models and evaluating their performance. They strengthened my understanding of both classification and regression techniques using real-world datasets and Python's machine learning ecosystem.
+Across Weeks 1, 2, and 3, I gained practical experience in:
+
+- Exploratory Data Analysis (EDA)
+- Data Cleaning and Preprocessing
+- Data Visualization
+- Feature Engineering
+- Classification
+- Regression
+- Model Evaluation
+- Hyperparameter Tuning
+- Decision Trees
+- Feature Importance Analysis
+- Business Problem Solving
+- Customer Churn Prediction
+- Google Colab
+- Scikit-learn
+- GitHub Version Control
 
 ---
 
-## Author
+# Future Improvements
 
-**Shahzaib Arshad**
+Future enhancements for these projects may include:
 
-Neurofive Machine Learning Track – Week 2
+- Hyperparameter tuning using RandomizedSearchCV.
+- Cross-validation for better model evaluation.
+- Ensemble learning methods such as Random Forest and XGBoost.
+- Customer churn prediction using Gradient Boosting algorithms.
+- Feature selection and dimensionality reduction techniques.
+- Model deployment using Flask or Streamlit.
